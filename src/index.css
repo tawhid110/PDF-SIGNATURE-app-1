@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   CUSTOM SHIMMER ANIMATION FOR THE WATERMARK BUTTON
+   ========================================================================= */
+@keyframes shimmer-slide {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer-slide 3s infinite linear;
+}
